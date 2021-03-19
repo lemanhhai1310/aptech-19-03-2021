@@ -1,0 +1,261 @@
+:root {
+    --color-primary: #165ba9;
+    --color-secondary: #0096ff;
+    --color-dark: #221f1f;
+    --color-danger: #ae1a1f;
+}
+
+@font-face {
+    font-family: 'font-regular';
+    src: url('fonts/SVN-GILROY REGULAR.OTF');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'font-bold';
+    src: url('fonts/SVN-GILROY\ BOLD.OTF');
+    font-display: swap;
+}
+
+* {
+	font-family: 'font-regular';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-weight-bold {
+    font-family: 'font-bold' !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.border-primary {
+    border: 1px solid var(--color-primary) !important
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
+
+.text-danger {
+    color: var(--color-danger) !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    nav .logo-lg {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #292929;
+}
+
+.section-3 .badges::before {
+    content: '';
+    width: auto;
+    height: 2px;
+    background-color: #164589;
+    position: absolute;
+    left: 65px;
+    right: 65px;
+    top: 30px;
+    z-index: -1;
+}
+
+.section-3 .quote {
+    border: 2px solid #164589;
+    padding: 1.25rem 2.5rem;
+    text-align: justify;
+    color: #164589;
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.section-3 .quote:after {
+    content: '';
+    width: 3rem;
+    height: 2rem;
+    top: 50%;
+    right: -1.4rem;
+    position: absolute;
+    margin-top: -1rem;
+    background: #fff url(./img/section-3-5.png) no-repeat center center/auto 1.4rem;
+}
+
+.section-4 {
+    background-image: url(./img/section-4-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-5 {
+    background-color: #01265a;
+}
+
+.section-5 .nav-tabs .nav-link {
+    background-color: cyan;
+}
+
+.section-5 .nav-tabs .active {
+    background-color: white !important;
+}
+
+.section-5 .tab-content ul {
+    list-style-image: url(img/section-5-li.png);
+}
+
+.section-6 {
+    background-image: url(./img/section-6-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-7 .img-container {
+	top: -75px;
+	height: 170px;
+	width: 170px;
+	border: 10px solid #FFF;
+	border-radius: 50%;
+	background-color: #FFF;
+}
+
+.section-7 .img-container img {
+	border-radius: 50%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.section-7 .carousel-inner{
+	overflow: visible !important;
+}
+
+.section-7 .card .title {
+	padding-left: 200px;
+}
+
+.section-7 .card {
+	flex-basis: 37%;
+}
+
+.section-7 .card a {
+	color: var(--color-main);
+}
+
+.section-7 .card-body {
+	background-color: #f0f0f0;
+}
+
+.section-7 .hidden-title {
+	display: none;
+}
+
+@media (max-width: 1150px) {
+	.section-7 .card {
+		flex-basis: 70%;
+		min-height: 0px;	
+	}
+
+	.section-7 #carouselFeelStdPC {
+		display: none !important;
+	}
+
+	.section-7 #carouselFeelStdMB {
+		display: block !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-7 .card .title {
+		display: none;	
+	}
+
+	.section-7 .card .hidden-title {
+        padding-top: 3rem !important;
+		display: block !important;	
+	}
+}
+
+.section-7 .swiper-button-prev,
+.section-7 .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    top: initial;
+    left: initial;
+    bottom: 1.5rem;
+    right: 0;
+}
+
+.section-7 .swiper-button-prev {
+    right: 2.5rem;
+}
+
+.section-8 {
+    background-image: url(./img/section-8-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: rgba(41,41,41,0.7) !important;
+    border-radius: 50% !important;
+    outline: none !important;
+    font-size: initial;
+    text-align: center;
+    padding: 7px;
+    color: white;
+}
+
+#scroll-top-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #E2E2E2;
+	border-radius: 5px;
+	display: none;
+	z-index: 200;
+}
+
+#scroll-top-btn i {
+	color: #221F1f;
+	font-weight: bold;
+}
+
+#scroll-top-btn:hover {
+    background-color: #221F1f;
+    color: white;
+}
+
+#scroll-top-btn:hover i {
+	color: #E2E2E2 !important;
+}
